@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grid</title>
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled and minified CSS -->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="settingsBlock">
+
+			<div class="form-group input">
+			  <label for="tr1">Rows:</label>
+			  <input type="number" class="form-control" name="tr1" id="tr1">
+			</div>
+
+			<div class="form-group input">
+			  <label for="td1">Columns:</label>
+			  <input type="number" class="form-control" name="td1" id="td1">
+			</div>	
+
+			<button type="button" id="submit" class="btn button" value="Create" onClick="">Create</button>
+			<button type="button" id="generate" class="btn button generateBtn" value="Generate" onClick="">Generate</button>
+
+			<div class="form-group input">
+			 <label for="td1">Import map:</label>
+			 <input type="file" class="form-control import" value="" name="td1" id="fileinput">
+			</div>
+			<button type="button" id="import" class="btn button" value="Load" onClick="">Load</button>
+			
+			
+			<ul id="colorList"></ul>
+			
+			
+			
+		</div>
+		<div class="mapBlock" id="mapBlock"></div>
+
+		
+		<button class="btn settings-btn" onClick="">Hide</button>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
